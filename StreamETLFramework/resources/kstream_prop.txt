@@ -1,0 +1,11 @@
+application.id=stream-processorv1.0
+bootstrap.servers=localhost:9092
+default.value.serde=org.apache.kafka.common.serialization.Serdes$StringSerde
+num.stream.threads=1
+default.key.serde=org.apache.kafka.common.serialization.Serdes$StringSerde
+input.topic=testtopic
+output.topic=jmx_test
+processor.class=io.anlyz.parsers.PanOSEventProcessorImpl
+processor.lib.dir=/root/KStream/
+error.topic=""
+shared.processor=true/false
